@@ -1,137 +1,131 @@
-# ⚡ EV INSIGHTS
+# 🚗 AUTOCAST
 
-### Reading the Data Behind Electric Mobility.
+### Predicting Vehicle Value Through Data.
 
-The electric vehicle market is growing rapidly.
+What determines the price of a vehicle?
 
-But behind every vehicle is a dataset containing a story about **range, price, manufacturers, technology, and adoption**.
+Is it the model?
+The specifications?
+The market?
 
-**EV Insights turns that raw data into a visual story.**
+**AutoCast uses Machine Learning to turn vehicle characteristics into a predicted price.**
 
 ---
 
-## 🔎 THE QUESTION
+## 💡 THE IDEA
 
-> **What can EV data tell us about the evolution of electric mobility?**
+Instead of manually estimating a vehicle's value, this project uses historical data to learn relationships between vehicle features and price.
 
-Instead of looking at individual vehicles, this project explores the bigger picture.
-
-```text id="evflow1"
-RAW EV DATA
-     ↓
-DATA CLEANING
-     ↓
-EXPLORATORY ANALYSIS
-     ↓
-FEATURE ENGINEERING
-     ↓
-VISUALIZATION
-     ↓
-INSIGHTS ⚡
+```text id="autoflow1"
+VEHICLE DETAILS
+      ↓
+DATA PROCESSING
+      ↓
+ML MODEL
+      ↓
+PRICE PREDICTION
+      ↓
+₹ ESTIMATED VALUE
 ```
 
 ---
 
-## 📊 WHAT I EXPLORED
+## 🔎 THE PROCESS
 
-### 🔋 Electric Range
+### 📥 INPUT
 
-Understanding how vehicle range differs across models and manufacturers.
+The user provides the required vehicle characteristics through an interactive interface.
 
-### 💰 Pricing
+### 🧹 PROCESS
 
-Examining price patterns and creating meaningful price categories.
+The inputs are converted into the format expected by the trained model.
 
-### 🏭 Manufacturers
+### 🤖 PREDICT
 
-Identifying popular makes and comparing their presence in the dataset.
+The saved machine-learning model generates a predicted vehicle price.
 
-### 🚘 Vehicle Types
+### 💰 DISPLAY
 
-Comparing **BEV** and **PHEV** vehicles.
-
-### 📅 Model Year
-
-Studying how EV characteristics change across different model years.
+The prediction is presented as an estimated value in **Indian Rupees**.
 
 ---
 
-## 🧠 FEATURES I CREATED
+## 🌐 FROM NOTEBOOK → APPLICATION
 
-To make the analysis more meaningful, I engineered additional variables such as:
+One of the important parts of this project was taking a trained ML model and making it usable through a simple application.
 
-`Vehicle Age`
-
-`Range Category`
-
-`Price Category`
-
-`EV Category`
-
-`Generation`
-
-`Range Score`
-
-`Make Popularity`
-
----
-
-## 📈 THE ANALYTICS STACK
-
-**Python**
-
-`Pandas` · `NumPy` · `Matplotlib`
-
-**Visualization**
-
-`Tableau`
-
-**Environment**
-
-`Jupyter Notebook` · `Google Colab`
-
----
-
-## 🎯 THE OUTPUT
-
-The goal isn't simply to create charts.
-
-It's to answer questions such as:
-
-* Which manufacturers appear most frequently?
-* How has EV range evolved?
-* How do BEVs and PHEVs differ?
-* What patterns exist between range and price?
-* How has the EV landscape changed over model years?
-
----
-
-## 💡 PROJECT PHILOSOPHY
-
-```text id="evflow2"
-DATA
- ↓
-QUESTION
- ↓
-ANALYSIS
- ↓
-PATTERN
- ↓
-INSIGHT
- ↓
-DECISION
+```text id="autoflow2"
+MODEL TRAINING
+      ↓
+model1.pkl
+      ↓
+FLASK
+      ↓
+WEB INTERFACE
+      ↓
+USER INPUT
+      ↓
+PREDICTION
 ```
 
-### ⚡ One dataset can contain thousands of stories.
+---
 
-**The analyst's job is to find the right one.**
+## 🛠️ TECHNOLOGY
+
+`Python`
+
+`Pandas`
+
+`Scikit-learn`
+
+`Flask`
+
+`HTML / CSS`
+
+`Pickle`
+
+`Jupyter Notebook`
 
 ---
 
-### 🚀 PROJECT TYPE
+## 🧠 WHAT I LEARNED
 
-**Data Analytics + Exploratory Data Analysis + Visualization**
+This project helped me understand the complete journey of a machine-learning model:
 
-### 📌 STATUS
+**Data → Training → Saved Model → Application → Prediction**
 
-**Completed / Continuously improving**
+It also introduced me to the practical side of **ML model deployment** using Flask.
+
+---
+
+## 🎯 PROJECT FOCUS
+
+**Machine Learning**
+
+**Regression / Price Prediction**
+
+**Model Deployment**
+
+**Flask**
+
+**Data Processing**
+
+---
+
+## 🚀 THE BIGGER IDEA
+
+A machine-learning model becomes much more useful when people can actually interact with it.
+
+> **Train the model.
+> Deploy the model.
+> Let the model solve a problem.**
+
+---
+
+### 📌 PROJECT TYPE
+
+**Machine Learning + Prediction + Flask Deployment**
+
+### 🚀 STATUS
+
+**Completed**
